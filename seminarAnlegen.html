@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Neues Seminar anlegen</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/fhlogo.png" alt="FH Dortmund Logo">
+      <h1>Neues Seminar anlegen</h1>
+    </header>
+    <nav>
+      <a href="seminarliste.html">Seminarliste</a>
+      <a href="aud.html">Seminardetailseite</a>
+      <a href="rett.html">Seminarleiter</a>
+    </nav>
+    <hr>
+    <main>
+
+    <fieldset>
+      <legend>Geben Sie bitte ein:</legend>
+        <form  action="seminarAnlegen.html" method="post">
+          <label>Seminartitel: </label>
+          <input type="text" name="titel" placeholder="Börsenseminar" autofocus required>
+          <br>
+
+          <label>Seminarleiter: </label>
+          <select name="dropdown" required>
+            <option value="rettinger">Herr Rettinger</option>
+            <option value="joerges"> Herr Joerges</option>
+            <option value="stark">Herr Stark</option>
+            <option value="vollmer">Herr Vollmer</option>
+            <option value="kunau">Frau Kunau</option>
+            <option value="harrer">Herr Harrer</option>
+          </select>
+          <br>
+
+          <label>Veranstaltungsdatum: </label>
+          <input type="date" name="datum" required>
+          <br>
+
+          <label>Uhrzeit</label>
+          <input type="time" name="uhr"required>
+          <br>
+
+          <label>Anzahl ingesamt verfügbarer Plätze:</label>
+          <input type="number" name="plaetze" value="50" max="100">
+        </form>
+      </fieldset>
+  </main>
+  <aside class="side">
+    <h2>Zusatzinfo</h2>
+    <ul>
+      <li>Seminar Softwaretechnik fällt am 24.05 aus</li>
+      <li>Seminar Softwaretechnik fällt am 24.05 aus</li>
+    </ul>
+  </aside>
+  <hr>
+  <footer> &#169; by Tram Anh Nguyen 2019 </footer>
+  </body>
+</html>

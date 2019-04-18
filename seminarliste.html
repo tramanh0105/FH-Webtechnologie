@@ -1,53 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <title>Liste der verfügbaren Seminare</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Liste der verfügbaren Seminare</title>
+</head>
 
-    <header>
-      <h1>Liste der verfügbaren Seminare</h1>
-    </header>
+<body>
 
-    <nav>
-        <a href="aud.html">AuD</a>
-        <a href="swt.html">SWT</a>
-        <a href="pk.html">PK</a>
-    </nav>
-    <hr>
-    
-    <main>
-      <ol>
-        <li><strong>C.1.02</strong>
+  <header>
+    <img src="images/fhlogo.png" alt="FH Dortmund Logo" width="375" height="135">
+    <h1>Liste der verfügbaren Seminare</h1>
+  </header>
+
+  <nav>
+    <a href="aud.html"> Seminardetailseite</a>
+    <a href="rett.html">Seminarleiter</a>
+
+  </nav>
+  <hr>
+
+  <main>
+
+    <!-- <ol>
+      <li><strong>C.1.02</strong>
         <ul>
-            <li>Titel:  <a href="aud.html">Algorithmen</a> </li>
-            <li>Veranstaltungsdatum des Seminars: 11-04-19</li>
-            <li>Veranstaltungsort: Emil-Fiege Straße</li>
+          <li>Titel: <a href="aud.html">Algorithmen</a> </li>
+          <li>Veranstaltungsdatum des Seminars: 11-04-19</li>
+          <li>Veranstaltungsort: Emil-Fiege Straße</li>
         </ul>
-        </li>
-        <li><strong>C.2.02</strong>
+      </li>
+      <li><strong>C.2.02</strong>
         <ul>
-            <li>Titel: <a href="swt.html"> Softwaretechnik </a></li>
-            <li>Veranstaltungsdatum des Seminars: 11-04-19</li>
-            <li>Veranstaltungsort: Emil-Fiege Straße</li>
+          <li>Titel: <a href="aud.html"> Softwaretechnik </a></li>
+          <li>Veranstaltungsdatum des Seminars: 11-04-19</li>
+          <li>Veranstaltungsort: Emil-Fiege Straße</li>
         </ul>
-        </li>
-        <li><strong>C.3.02</strong>
+      </li>
+      <li><strong>C.3.02</strong>
         <ul>
-            <li>Titel: <a href="pk.html">Programmierkurs</a></li>
-            <li>Veranstaltungsdatum des Seminars: 11-04-19</li>
-            <li>Veranstaltungsort: Emil-Fiege Straße</li>
+          <li>Titel: <a href="aud.html">Programmierkurs</a></li>
+          <li>Veranstaltungsdatum des Seminars: 11-04-19</li>
+          <li>Veranstaltungsort: Emil-Fiege Straße</li>
         </ul>
-        </li>
-      </ol>
-    </main>
-    <aside class="side">
-      <h2>Zusatzinfo</h2>
-      <p>Ich bin Zusatzinfo</p>
-    </aside>
+      </li>
+    </ol> -->
+    <form action="seminarliste.html" method="get">
+      <label>Suchbegriff:</label>
+      <input type="text"
+      name="suchbegriff"
+      size="30"
+      placeholder="Seminartitel"
+      >
 
-    <footer>Made by Tram Anh Nguyen 2019</footer>
-  </body>
+      <input type="submit"
+      name="anssenden"
+      value="Finden">
+
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ind.</th>
+          <th>Seminarräume</th>
+          <th>Titel</th>
+          <th>Datum</th>
+          <th>Veranstaltungsort</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>C.1.02</td>
+          <td><a href="aud.html">Algorithmen</a></td>
+          <td>11-04-19</td>
+          <td>Emil-Fiege Straße 40</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>C.2.02</td>
+          <td><a href="aud.html">Softwaretechnik</a></td>
+          <td>11-04-19</td>
+          <td>Emil-Fiege Straße 40</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>C.3.02</td>
+          <td><a href="aud.html">Programmierkurs</a></td>
+          <td>11-04-19</td>
+          <td>Emil-Fiege Straße 40</td>
+        </tr>
+
+      </tbody>
+      </table>
+      <br>
+      <a href="seminarAnlegen.html">Neues Seminar anlegen</a>
+  </main>
+  <aside class="side">
+    <h2>Zusatzinfo</h2>
+    <ul>
+      <li>Seminar Softwaretechnik fällt am 24.05 aus</li>
+      <li>Seminar Softwaretechnik fällt am 24.05 aus</li>
+    </ul>
+  </aside>
+
+  <hr>
+  <footer> &#169; 2019 by Tram Anh Nguyen </footer>
+</body>
+
 </html>
