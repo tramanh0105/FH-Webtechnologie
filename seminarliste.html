@@ -45,18 +45,27 @@
         </ul>
       </li>
     </ol> -->
-    <form action="seminarliste.html" method="get">
-      <label>Suchbegriff:</label>
-      <input type="text"
-      name="suchbegriff"
-      size="30"
+    <form action="https://labs.inf.fh-dortmund.de/seminarApp/testSearch.php" method="get">
+      <p>
+      <label for="titel">Suchbegriff:</label>
+      <input id="titel"list="vorschlag" type="text"
+      name="semtitle"
+      maxlength="20"
       placeholder="Seminartitel"
+      pattern="[A-Z]{1}\w*"
+      required
       >
+
+      <datalist id="vorschlag">
+        <option value="Webtechnik">
+        <option value="Bwl">
+        <option value="Vwl">
+      </datalist>
 
       <input type="submit"
       name="anssenden"
       value="Finden">
-
+      </p>
     </form>
 
     <table>

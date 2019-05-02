@@ -22,33 +22,55 @@
 
     <fieldset>
       <legend>Geben Sie bitte ein:</legend>
-        <form  action="seminarAnlegen.html" method="post">
-          <label>Seminartitel: </label>
-          <input type="text" name="titel" placeholder="Börsenseminar" autofocus required>
-          <br>
+      <p>
+        <form  action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
+          <p>
+          <label for="titel">Seminartitel: </label>
+          <input id="titel"type="text" name="semtitle" placeholder="Börsenseminar" autofocus required
+          maxlength="20" pattern="[A-Z]{1}\w*">
+          </p>
 
-          <label>Seminarleiter: </label>
-          <select name="dropdown" required>
+          <p>
+          <label for="leiter">SeminarleiterIn: </label>
+          <select id="leiter" name="semlead" >
             <option value="rettinger">Herr Rettinger</option>
-            <option value="joerges"> Herr Joerges</option>
+            <option value="joerges" selected> Herr Joerges</option>
             <option value="stark">Herr Stark</option>
             <option value="vollmer">Herr Vollmer</option>
             <option value="kunau">Frau Kunau</option>
             <option value="harrer">Herr Harrer</option>
           </select>
-          <br>
+          </p>
 
-          <label>Veranstaltungsdatum: </label>
-          <input type="date" name="datum" required>
-          <br>
+          <p>
+          <label for="veranstaltung">Veranstaltungsdatum: </label>
+          <input id="veranstaltung"type="date" name="semdate" pattern="[1-9]{4}-[0-9]{2}-[0-9]{2}">
+          </p>
 
-          <label>Uhrzeit</label>
-          <input type="time" name="uhr"required>
-          <br>
+          <p>
+          <label for="startzeit">Startzeit</label>
+          <input id="startzeit"type="time" name="semstart" min="08:00" max="16:00">
+          </p>
 
-          <label>Anzahl ingesamt verfügbarer Plätze:</label>
-          <input type="number" name="plaetze" value="50" max="100">
+          <p>
+          <label for="endzeit">Endezeit</label>
+          <input id="endezeit"type="time" name="semend" max="18:00">
+          </p>
+
+          <p>
+          <label for="seats">Anzahl ingesamt verfügbarer Plätze:</label>
+          <input id="seats"type="number" name="semseats"  min="0" max="100">
+          </p>
+
+          <p>
+          <label for="tutor">TutorIn:</label>
+          <input id="tutor"type="text" name="semtutor" pattern="[[a-z]{2,4}[0-9]{1},]*" >
+          </p>
+
+          <br>
+          <input type="submit" name="submit" value="Absenden">
         </form>
+        </p>
       </fieldset>
   </main>
   <aside class="side">
