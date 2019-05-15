@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>Neues Seminar anlegen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
@@ -19,16 +20,16 @@
     </nav>
     <hr>
     <main>
+        <p>
+            <form  action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
+              <fieldset>
+                <legend>Geben Sie bitte ein:</legend>
+            <p>
+            <label for="titel">Seminartitel: </label>
+            <input id="titel" type="text" name="semtitle" placeholder="Börsenseminar" autofocus required
+            maxlength="20" pattern="[A-Z]{1}\w*">
 
-    <fieldset>
-      <legend>Geben Sie bitte ein:</legend>
-      <p>
-        <form  action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
-          <p>
-          <label for="titel">Seminartitel: </label>
-          <input id="titel"type="text" name="semtitle" placeholder="Börsenseminar" autofocus required
-          maxlength="20" pattern="[A-Z]{1}\w*">
-          </p>
+        </p>
 
           <p>
           <label for="leiter">SeminarleiterIn: </label>
@@ -44,7 +45,7 @@
 
           <p>
           <label for="veranstaltung">Veranstaltungsdatum: </label>
-          <input id="veranstaltung"type="date" name="semdate" pattern="[1-9]{4}-[0-9]{2}-[0-9]{2}">
+          <input id="veranstaltung"type="date" name="semdate" >
           </p>
 
           <p>
@@ -64,7 +65,7 @@
 
           <p>
           <label for="tutor">TutorIn:</label>
-          <input id="tutor"type="text" name="semtutor" pattern="[[a-z]{2,4}[0-9]{1},]*" >
+          <input id="tutor"type="text" name="semtutors" pattern="[[a-z]{2,4}[0-9]{1},]*" >
           </p>
 
           <br>
