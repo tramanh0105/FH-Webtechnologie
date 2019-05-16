@@ -1,25 +1,31 @@
 /*font family for all elements */
 *{
-  font-family: Arial;
+  font-family: Helvetica, Arial;
 }
 /*adding style for valid, invalid,required input*/
+
+input:invalid {
+  background-color:#FF3B3F;
+  color: white;
+  border-right-color:red;
+}
 input:valid{
   border-right-color:  #00ff99;
-}
-input:invalid {
-  border-right-color:red;
 }
 input:required{
  border-right-color: 	#ff9900;
 }
-input[required]::after{
+/* span{
+  display: inline;
+} */
+.required::after{
    content:" erforderliche Eingabe";
    color: #FC4A1A;
 }
 /*trivia things*/
-.side::before{
+aside .zusatz::before{
   content: ' Aktuelle Meldungen';
-  color: #4ABDAC;
+  color: #66B9BF;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -29,11 +35,11 @@ nav a:hover{
 /*styling the seminar table*/
 #table th{
   background-color: #FC4A1A;
-  color:#F0EBF4;
+  color:#DFDCE3;
 }
 #table tr:nth-of-type(even){
   background-color: #F78733;
-  color: #F0EBF4;
+  color: #DFDCE3;
 }
 /*adding evelope icon next to email link*/
 #mail::after{
@@ -44,4 +50,40 @@ nav a:hover{
   height: 20px;
   background: url("images/Mail.jpeg") no-repeat ;
   background-size: contain;
+}
+footer{
+  text-align: center;
+  color: #96858F;
+
+}
+
+/*Aufgabe 2 Praktikum 6: Zusatzinfo stylen*/
+aside{
+  padding: 3px;
+  margin: 3px;
+  border:2px dashed #07889B;
+}
+
+/*Formular stylen*/
+.fieldset{
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.legend{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-style: italic;
+  background-color:#E37222;
+  color: #DFDCE3;
+  font-size: 0.85em;
+}
+
+/*Inhaltliche Bloecke stylen*/
+[class ^="div"]{
+  border-left: 2px solid #9099A2;
+  padding-left: 5px;
+
 }

@@ -21,13 +21,15 @@
     <hr>
     <main>
         <p>
-            <form  action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
-              <fieldset>
-                <legend>Geben Sie bitte ein:</legend>
+          <form  action="https://labs.inf.fh-dortmund.de/seminarApp/testCreateSeminar.php" method="post">
+            <fieldset class="fieldset">
+                <legend class="legend">Geben Sie bitte ein:</legend>
             <p>
             <label for="titel">Seminartitel: </label>
+
             <input id="titel" type="text" name="semtitle" placeholder="Börsenseminar" autofocus required
             maxlength="20" pattern="[A-Z]{1}\w*">
+            <span class ="required"></span>
 
         </p>
 
@@ -74,9 +76,9 @@
         </p>
       </fieldset>
   </main>
-  <aside class="side">
+  <aside>
     <h2>Zusatzinfo</h2>
-    <ul>
+    <ul class ="zusatz">
       <li>Seminar Softwaretechnik fällt am 24.05 aus</li>
       <li>Seminar Softwaretechnik fällt am 24.05 aus</li>
     </ul>
