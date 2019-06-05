@@ -14,7 +14,7 @@ a {
 
 .flex-container {
   display: flex;
-  margin-top:4em;
+  margin-top: 4em;
   flex-wrap: wrap;
   padding: 5em 12em;
 }
@@ -27,6 +27,7 @@ a {
   height: 10em;
   width: 10em;
   background-color: #FC4A1A;
+  box-shadow: 5px 10px 20px rgb(94, 101, 101);
 }
 
 .box:hover {
