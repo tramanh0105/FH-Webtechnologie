@@ -127,7 +127,7 @@ footer {
 }
 
 /*Grid- Layouts*/
-.container {
+/* .container {
   display: grid;
   grid-template-areas: "header header"
     "nav    nav"
@@ -158,4 +158,18 @@ aside {
 
 footer {
   grid-area: footer;
+} */
+
+/*responsive design*/
+/*tablet display*/
+@media screen and (max-width:768px) {
+h1{
+  font-size: 0.95em;
+}
+}
+@media screen and (max-width: 480px) {
+  h1{
+    display: none;
+  }
+
 }
