@@ -118,47 +118,19 @@ header {
   flex-flow: row;
   justify-content: flex-start;
 }
+header img{
+   width: 30%; 
 
-/*Fester Fussbereich*/
+}
+
+/*Fester Fussbereich*/ 
 footer {
   position: fixed;
   bottom: 5px;
   /* text-align: center; */
 }
 
-/*Grid- Layouts*/
-/* .container {
-  display: grid;
-  grid-template-areas: "header header"
-    "nav    nav"
-    "main  aside"
-    "footer footer"
-  ;
-  grid-template-columns: 70% 30%;
-}
 
-header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-main {
-  padding-top: 2em;
-  padding-left: 1em;
-  grid-area: main;
-}
-
-aside {
-  padding-top: 2em;
-  grid-area: aside;
-}
-
-footer {
-  grid-area: footer;
-} */
 
 /*responsive design*/
 /*tablet display*/
