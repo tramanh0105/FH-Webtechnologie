@@ -54,22 +54,6 @@ footer {
 @media screen and (max-width: 480px) {
 
 
-    /*main {*/
-    /*    display: grid;*/
-    /*    grid-template-areas: "divinfo" "figure";*/
-    /*    grid-template-columns: 100%;*/
-    /*}*/
-
-    /*#kontaktdaten {*/
-    /*    grid-area: divinfo;*/
-    /*    color: blue;*/
-    /*}*/
-
-    /*figure {*/
-    /*    grid-area: figure;*/
-    /*}*/
-
-
     main{
         display: flex;
         flex-direction: column-reverse;

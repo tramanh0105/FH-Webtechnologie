@@ -20,14 +20,15 @@ a {
 }
 
 .box {
+
   display: flex;
-  /* min-width: 125px; */
+
   justify-content: center;
   margin: 18px;
   height: 150px;
   width: 150px;
-  /* height: 10em;
-  width: 10em; */
+  color: white;
+  
   background-color: #FC4A1A;
   box-shadow: 5px 10px 20px rgb(94, 101, 101);
 }
@@ -35,6 +36,7 @@ a {
 .box:hover {
   background-color: #ff9900;
 }
+
 
 /*tablet display*/
 @media screen and (max-width: 768px) {
